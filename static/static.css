@@ -1,0 +1,46 @@
+li {
+    display: inline-flex;
+}
+
+#wrapper {
+    background-color: #fff;
+    margin: 0;
+    padding-left: 0;
+}
+
+li a {
+    margin: 0 auto;
+    font-size: xx-large;
+    padding: 8px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: hotpink;
+    font-family: 'Nunito Sans';
+}
+
+li a:hover {
+    background-color: #eee
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 24px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#body {
+    background-image: url('birb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#paragraph {
+    padding-left: 32px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: 'Nunito Sans';
+    color: gainsboro;
+}
