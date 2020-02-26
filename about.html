@@ -6,24 +6,24 @@
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
         <link rel="manifest" href="static/favicon//site.webmanifest">
         <link rel="stylesheet" href="css/animate.css">
-        <script src="js/wow.js"></script>
-        <script>
-        new WOW().init();
-        </script>
         <link href='css/static.css' type="text/css" rel="stylesheet">
         <script src='js/jquery.js'></script>
         <script> 
             $(function(){
-                $("#navigationBar").load("header.html"); 
-                var $page = window.location.href;
-                 $('ul.navigation li a').each(function(){
-                    var $href = $(this).attr('href');
+                $("#navigationBar").load("header.html", function() {
+                    var $page = window.location.pathname;
+                 $('ul li a').each(function(){
+                    var $href = "/".concat($( this ).attr("href"))
+
                     if ( ($href == $page) || ($href == '') ) {
+                        console.log("class set!")
                         $(this).addClass('on');
                     } else {
                         $(this).removeClass('on');
                     }
                 });
+                }); 
+
             });
         </script> 
         <title>About Me</title>
@@ -31,7 +31,7 @@
     </head>
     <body id="body">
         <div id='navigationBar'></div>
-        <div><p class='wow bounce' style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 1s; animation-name: fadeInUp;" id="paragraph">This is a new page! Let's test navigation.</p></div>
+        <div><p style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 1s; animation-name: fadeInUp;" id="paragraph">This is a new page! Let's test navigation.</p></div>
     </body>
 </html>
 

@@ -12,7 +12,6 @@ li a {
     margin: 0 auto;
     font-size: xx-large;
     padding: 8px;
-    
     text-align: center;
     display: block;
     text-decoration: none;
@@ -42,9 +41,12 @@ ul {
 }
 
 #paragraph {
-    padding-left: 32px;
     font-size: 36px;
+    margin-left: 32px;
     font-weight: lighter;
     font-family: 'Nunito Sans';
     color: gainsboro;
+    display: flex;
+    background-color: gray;
 }
+

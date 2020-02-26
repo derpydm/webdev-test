@@ -8,28 +8,24 @@
         <link rel="stylesheet" href="css/animate.css">
         <link href='css/static.css' type="text/css" rel="stylesheet">
         <script src='js/jquery.js'></script>
-        <script src="js/WOW.js"></script>
         <script> 
             $(function(){
                 $("#navigationBar").load("header.html"); 
-                var $page = window.location.href;
-                $('ul.navigation li a').each(function(){
-                    var $href = $(this).attr('href');
-                    console.log($href)
-                    if ( ($href == $page) || ($href == '') ) {
-                        console.log("Class added!")
-                        $(this).addClass('on');
-                    } else {
-                        $(this).removeClass('on');
-                    }
-                });
             });
         </script> 
+        <script>
+            $( document ).ready(function() {
+                let $page = document.location.href
+                $("ul li a").each(function(i) {
+                    console.log(this.href)
+                })
+            })
+        </script>
         <title>Sean Wong</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     </head>
     <body id = "body">
         <div id='navigationBar'></div>
-        <div><p class='wow' style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 1s; animation-name: fadeInUp;" id="paragraph">Content!<br>Lorem ipsum dolor sit amet. <br> New line, new content!</p></div>
+        <div><p class='wow' style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 2s; animation-name: fadeInUp;" id="paragraph">Hey there.</p></div>
     </body>
 </html>
