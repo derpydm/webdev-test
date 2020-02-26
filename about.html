@@ -4,20 +4,21 @@
         <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-        <link rel="manifest" href="static/favicon/site.webmanifest">
+        <link rel="manifest" href="static/favicon//site.webmanifest">
         <link rel="stylesheet" href="css/animate.css">
+        <script src="js/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
         <link href='css/static.css' type="text/css" rel="stylesheet">
         <script src='js/jquery.js'></script>
-        <script src="js/WOW.js"></script>
         <script> 
             $(function(){
                 $("#navigationBar").load("header.html"); 
                 var $page = window.location.href;
-                $('ul.navigation li a').each(function(){
+                 $('ul.navigation li a').each(function(){
                     var $href = $(this).attr('href');
-                    console.log($href)
                     if ( ($href == $page) || ($href == '') ) {
-                        console.log("Class added!")
                         $(this).addClass('on');
                     } else {
                         $(this).removeClass('on');
@@ -25,11 +26,12 @@
                 });
             });
         </script> 
-        <title>Sean Wong</title>
+        <title>About Me</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     </head>
-    <body id = "body">
+    <body id="body">
         <div id='navigationBar'></div>
-        <div><p class='wow' style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 1s; animation-name: fadeInUp;" id="paragraph">Content!<br>Lorem ipsum dolor sit amet. <br> New line, new content!</p></div>
+        <div><p class='wow bounce' style="font-family: 'Nunito Sans'; display: inline-block; visibility: visible; animation-duration: 1s; animation-name: fadeInUp;" id="paragraph">This is a new page! Let's test navigation.</p></div>
     </body>
 </html>
+
