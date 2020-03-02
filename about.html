@@ -1,33 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-        <link rel="manifest" href="static/favicon//site.webmanifest">
-        <link rel="stylesheet" href="css/animate.css">
-        <link href='css/static.css' type="text/css" rel="stylesheet">
         <script src='js/jquery.js'></script>
-        <script> 
-            $(function(){
-                $("#navigationBar").load("header.html", function() {
-                    var $page = window.location.pathname;
-                 $('ul li a').each(function(){
-                    var $href = "/".concat($( this ).attr("href"))
-
-                    if ( ($href == $page) || ($href == '') ) {
-                        console.log("class set!")
-                        $(this).addClass('on');
-                    } else {
-                        $(this).removeClass('on');
-                    }
-                });
-                }); 
-
-            });
-        </script> 
-        <title>About Me</title>
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+        <script>$(function(){ $("head").load("head.html")})</script>
     </head>
     <body id="body">
         <div id='navigationBar'></div>

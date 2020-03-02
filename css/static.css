@@ -29,6 +29,8 @@ li a.on {
 ul {
     list-style-type: none;
     margin: 0;
+    top: 0;
+    position: sticky;
     padding-left: 24px;
     background-color: #fff;
     overflow: hidden;
@@ -40,13 +42,19 @@ ul {
     margin: 0;
 }
 
+p span {
+    display: block;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
 #paragraph {
     font-size: 36px;
     margin-left: 32px;
     font-weight: lighter;
     font-family: 'Nunito Sans';
-    color: gainsboro;
+    color: white;
     display: flex;
-    background-color: gray;
+    border-radius: 8px;
 }
 
