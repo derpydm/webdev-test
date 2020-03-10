@@ -1,5 +1,6 @@
 li {
     display: inline-flex;
+    offset-distance: 0;
 }
 
 #wrapper {
@@ -8,6 +9,15 @@ li {
     padding-left: 0;
 }
 
+div#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url("../static/loader.gif") 50% 50% no-repeat;
+    z-index: 9999;
+}
 li a {
     margin: 0 auto;
     font-size: xx-large;
@@ -15,36 +25,34 @@ li a {
     text-align: center;
     display: block;
     text-decoration: none;
-    color: hotpink;
+    color: #000;
     font-family: 'Nunito Sans';
 }
 
 li a:hover {
-    background-color: #eee
+    background-color: #eee;
 }
 li a.on {
-    background-color: #eee;
+    background-color: #ccc;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     top: 0;
+    display: flex;
     position: sticky;
     padding-left: 24px;
     background-color: #fff;
-    overflow: hidden;
 }
 #body {
     background-image: url('/static/birb.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     margin: 0;
 }
-
 p span {
     display: block;
-    margin-left: 16px;
     margin-right: 16px;
 
 }
